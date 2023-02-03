@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <cn.com.cys.widget.VerificationInputView
+        android:id="@+id/verify_view_rect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:viv_inputStyle="rect"
+        app:layout_constraintBottom_toTopOf="@id/verify_view_round"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </cn.com.cys.widget.VerificationInputView>
+
+    <cn.com.cys.widget.VerificationInputView
+        android:id="@+id/verify_view_round"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:viv_inputStyle="round"
+        app:layout_constraintBottom_toTopOf="@id/verify_view_line"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/verify_view_rect">
+
+    </cn.com.cys.widget.VerificationInputView>
+
+    <cn.com.cys.widget.VerificationInputView
+        android:id="@+id/verify_view_line"
+        android:layout_width="wrap_content"
+        app:viv_inputStyle="line"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/verify_view_round">
+
+    </cn.com.cys.widget.VerificationInputView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

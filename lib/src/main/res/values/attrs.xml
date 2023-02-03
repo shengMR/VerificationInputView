@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="VerificationInputView">
+        <attr name="viv_inputCount" format="integer|reference"/>
+        <attr name="viv_inputStyle" format="enum">
+            <enum name="rect" value="0"/>
+            <enum name="round" value="1"/>
+            <enum name="line" value="2"/>
+        </attr>
+        <attr name="viv_textSize" format="dimension|reference"/>
+        <attr name="viv_textColor" format="color|reference"/>
+        <attr name="viv_boxSize" format="dimension|reference"/>
+        <attr name="viv_boxSpace" format="dimension|reference"/>
+        <attr name="viv_boxBackground" format="reference"/>
+        <attr name="viv_selectedColor" format="color|reference"/>
+        <attr name="viv_normalColor" format="color|reference"/>
+
+    </declare-styleable>
+</resources>
